@@ -2,7 +2,7 @@ import react from 'react';
 import PropTypes from 'prop-types';
 
 
-export default function NavBar(props){
+export default function Navbar(props){
     return(
         <nav className="navbar navbar-expand-lg bg-body-tertiary">
       <div className="container-fluid">
@@ -29,11 +29,11 @@ export default function NavBar(props){
     </nav> 
     );
 };
-NavBar.prototypes={
+Navbar.prototypes={
     title: PropTypes.string.isRequired,
-    about: PropTypes.String.isRequired
+    about: PropTypes.string.isRequired
 }
-NavBar.defaultProps={
+Navbar.defaultProps={
     title: "Set Title Here",
     about: "About text here"
 }
