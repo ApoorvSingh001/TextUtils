@@ -6,11 +6,13 @@ const handleUpClick=()=>{
     let newText=text.toUpperCase();
      console.log(newText);
     setText(newText);
+    props.showAlert("Converted to UpperCase","success");
 }
 const handleLowClick=()=>{
   let newText=text.toLowerCase();
    console.log(newText);
   setText(newText);
+  props.showAlert("Converted to LowerCase","success");
 }
 const handleOnChange=(event)=>{
     console.log("On Change");
